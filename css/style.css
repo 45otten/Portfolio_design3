@@ -14,28 +14,17 @@
     font-weight: 400;
 }
 
-body.dark{
-    color: var(--text-white-500);
-    background-color: var(--bg-black);
-}
-body.dark main .main-ctn .main-ctn-1 .auto-type .about-me-string strong{
-    color: var(--text-white-500);
-}
-body.dark main .nav-bar nav ul .toggle-mode i{
-    border: 2px solid var(--text-white-500);
-}
-body.dark main .nav-bar nav h1 span{
-    color: var(--text-white-500);
-}
-body{
-    background: var(--bg-white);
-}
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    height: 100vh;
+    height: 800px;
+}
+@media (max-width:800px){
+    main{
+        height: 900px;
+    }
 }
 main .wave{
     position: absolute;
@@ -44,16 +33,30 @@ main .wave{
 }
 main .main-ctn{
     width: 85%;
-    height: 90vh;
-    padding: 150px 0;
+    height: auto;
+    padding: 110px 0 0;
     display: flex;
     justify-content: space-between;
     z-index: 1;
+    margin: 15px;
     /* border: 2px solid orange; */
+}
+@media(max-width: 800px){
+    main .main-ctn{
+        width: 90%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
 }
 main .main-ctn .main-ctn-1{
     width: 50%;
     height: 350px;
+}
+@media(max-width: 800px){
+    main .main-ctn .main-ctn-1{
+        width: 100%;
+    }
 }
 main .main-ctn .main-ctn-1 h1{
     font-weight: 900;
@@ -105,6 +108,12 @@ main .main-ctn .main-ctn-2{
     justify-content: end;
     align-items: center;
 }
+@media(max-width: 800px){
+    main .main-ctn .main-ctn-2{
+        width: 100%;
+        height: 300px;
+    }
+}
 main .main-ctn .main-ctn-2 .blob-1{
     height: 100%;
     width: 70%;
@@ -112,6 +121,12 @@ main .main-ctn .main-ctn-2 .blob-1{
     display: flex;
     justify-content: center;
     animation: animate1 5s ease-in-out infinite;
+}
+@media(max-width: 800px){
+    main .main-ctn .main-ctn-2 .blob-1{
+        width: 100%;
+        margin-top: 45px;
+    }
 }
 @keyframes animate1 {
     0%,100%{

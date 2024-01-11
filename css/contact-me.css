@@ -15,9 +15,14 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: 1000px;
     position: relative;
     overflow: hidden;
+}
+@media (max-width:960px){
+    main{
+        height: 1200px;
+    }
 }
 main .wave{
     position: absolute;
@@ -31,6 +36,11 @@ main .cont-main-ctn{
     flex-direction: column;
     align-items: center;
     height:100%;
+}
+@media (max-width:400px){
+    main .cont-main-ctn{
+        width: 100%;
+    }
 }
 main .cont-main-ctn .cont-main-ctn1{
     width: 90%;
@@ -51,7 +61,7 @@ main .cont-main-ctn .cont-main-ctn1 .cont-img{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -20px;
+    margin-top: -50px;
 }
 main .cont-main-ctn .cont-main-ctn1 .cont-img h1{
     color: var(--text-white-500);
@@ -78,9 +88,20 @@ main .cont-main-ctn .cont-main-ctn1 .cont-info{
     padding: 30px 0 30px ;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
+/* @media (max-width:960px){
+    main .cont-main-ctn .cont-main-ctn1 .cont-info{
+        flex-direction: column;
+    }
+} */
 main .cont-main-ctn .cont-main-ctn1 .cont-info .contact{
-    width: 500px;
+    width: 50%;
+}
+@media (max-width:960px){
+    main .cont-main-ctn .cont-main-ctn1 .cont-info .contact{
+        width: 100%;
+    }
 }
 main .cont-main-ctn .cont-main-ctn1 .cont-info .email-cont,.insta-cont,.phone-cont,.fiverr-cont{
     font-weight: 500;
@@ -100,14 +121,22 @@ main .cont-main-ctn .cont-main-ctn1 .cont-info .fiverr-cont i{
     color: #f00;
 }
 main .cont-main-ctn .cont-main-ctn1 .cont-info .inbox-img{
-    width: 300px;
-    height: inherit;
+    width: 200px;
+    height: 200px;
     background: url('/assets/images/inbox-1.webp');
-    background-position: center center;
-    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     box-shadow: 0 0 20px var(--text-blue-500);
     animation: mover 5s infinite alternate;
 }
+@media (max-width:960px){
+    main .cont-main-ctn .cont-main-ctn1 .cont-info .inbox-img{
+        width: 100%;
+        margin-top: 50px;
+    }
+}
+main .cont-main-ctn .cont-main-ctn1 .cont-info .inbox-img
 main .cont-main-ctn .cont-main-ctn1 .cont-info .inbox-img img{
     height: inherit;
     width: 100%;

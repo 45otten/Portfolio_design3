@@ -3,6 +3,9 @@
     --text-black:#000000;
     --shadow-black:#00000033;
     --bg-gray-2:#8b8b8b3f;
+    --text-white-500:#fff;
+    --bg-black:#000;
+    --shadow-blue-500: #0629f067;
 }
 main .nav-bar{
    width: 85%;
@@ -11,7 +14,14 @@ main .nav-bar{
    height: 60px;
    position: fixed;
    padding: 10px 0;
-   /* border: 1px solid green; */
+   z-index: 99 !important;
+}
+@media (max-width:360px){
+    main .nav-bar{
+        width: 100%;
+        box-shadow: none;
+        margin: -10px 0;
+    }
 }
 main .nav-bar .active{
     color: var(--text-blue-600);
@@ -23,11 +33,10 @@ main .nav-bar nav{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    /* padding:20px[]; */
-    border: 1px solid green;
     color: var(--text-white);
     box-shadow: 0 0 15px var(--shadow-black);
-    /* border: 1px solid red; */
+    background-color: var(--text-white-500);
+    z-index: 99 !important;
 }
 main .nav-bar nav h1{
     color:var(--text-blue-600);
@@ -40,6 +49,14 @@ main .nav-bar nav h1 span{
     font-family:"Rubik Distressed";
     font-size: 30px;
 }
+@media (max-width:470px){
+    main .nav-bar nav h1{
+        display: none;
+    }
+    main .nav-bar nav{
+        justify-content: center;
+    }
+}
 main .nav-bar nav h1::after{
     content: "";
     position: absolute;
@@ -48,24 +65,24 @@ main .nav-bar nav h1::after{
     right: 1px;
     border-bottom: 2px solid var(--text-blue-600);
 }
+main .nav-bar nav ul a:visited{
+    text-decoration: none;
+    color: var(--bg-black);
+}
+main .nav-bar nav ul a:active{
+    color: var(--text-blue-600);
+    filter: drop-shadow(0 0 5px var(--shadow-blue-500));
+}
 main .nav-bar nav ul li{
     display: inline-block;
     margin-right: 15px;
     padding: 8px 0; 
     font-weight: 500;
+    border-bottom: 2px solid white;
 }
 
 main .nav-bar nav ul li:hover{
     border-bottom: 2px solid var(--text-blue-600);
     cursor: pointer;
     padding: 1px 0;
-    transition: all 0.3s linear 0s;
-}
-main .nav-bar nav ul .toggle-mode i{
-    border: 2px solid var(--text-black);
-    padding: 5px;
-    width: 15px;
-    text-decoration: none;
-    border-radius:50%;
-    color: var(--text-white);
 }
