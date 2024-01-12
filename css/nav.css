@@ -1,6 +1,7 @@
 :root{
     --text-blue-600:#0629F0;
-    --text-black:#000;
+    --text-black:#000000;
+    --shadow-black:#00000033;
     --bg-gray-2:#8b8b8b3f;
 }
 main .nav-bar{
@@ -9,7 +10,8 @@ main .nav-bar{
    justify-content: center;
    height: 60px;
    position: fixed;
-   border: 1px solid green;
+   padding: 10px 0;
+   /* border: 1px solid green; */
 }
 main .nav-bar .active{
     color: var(--text-blue-600);
@@ -19,10 +21,13 @@ main .nav-bar .active{
 main .nav-bar nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
-    padding: 10px;
+    /* padding:20px[]; */
+    border: 1px solid green;
     color: var(--text-white);
-    border: 1px solid red;
+    box-shadow: 0 0 15px var(--shadow-black);
+    /* border: 1px solid red; */
 }
 main .nav-bar nav h1{
     color:var(--text-blue-600);
@@ -49,14 +54,17 @@ main .nav-bar nav ul li{
     padding: 8px 0; 
     font-weight: 500;
 }
+
 main .nav-bar nav ul li:hover{
     border-bottom: 2px solid var(--text-blue-600);
-    padding-bottom: 1px;
     cursor: pointer;
+    padding: 1px 0;
+    transition: all 0.3s linear 0s;
 }
 main .nav-bar nav ul .toggle-mode i{
     border: 2px solid var(--text-black);
     padding: 5px;
+    width: 15px;
     text-decoration: none;
     border-radius:50%;
     color: var(--text-white);

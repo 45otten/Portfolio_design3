@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@300;400;500&&family=Rubik+Distressed&display=swap');
+
+:root{
+    --text-white-500:#fff;
+    --text-black-500:#000;
+    --text-blue-500:#0629f0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins",sans-serif;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+main .wave{
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    height: 400px;
+}
+main .cont-main-ctn{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:100%;
+}
+main .cont-main-ctn .cont-main-ctn1{
+    width: 90%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .cont-main-ctn .cont-main-ctn1 .cont-img{
+    margin-top: 50px;
+    width: 460px;
+    height: 150px;
+    border-radius: 50%;
+    background: url('/assets/images/contact me heading img.png');
+    background-repeat: no-repeat;
+    animation: animate 9s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+}
+main .cont-main-ctn .cont-main-ctn1 .cont-img h1{
+    color: var(--text-white-500);
+    font-size: 50px;
+}
+@keyframes animate {
+    0%,100%{
+        border-radius: 100% 60% 50% 50% /100% 50% 100% 60%;
+    }
+    50%{
+        border-radius: 60% 80% 80% 50% /70% 80% 50% 80%;
+        
+    }
+}
+main .cont-main-ctn .cont-main-ctn1 h3{
+    line-height: 50px;
+    color: var(--text-black-500);
+    border-bottom: 2px solid var(--text-black-500);
+}
+main .cont-main-ctn .cont-main-ctn1 .cont-info{
+    width: 100%;
+    height: 200px;
+    margin-top: 40px;
+    padding: 30px 0 30px ;
+    display: flex;
+    justify-content: space-between;
+}
+main .cont-main-ctn .cont-main-ctn1 .cont-info .contact{
+    width: 500px;
+}
+main .cont-main-ctn .cont-main-ctn1 .cont-info .email-cont,.insta-cont,.phone-cont,.fiverr-cont{
+    font-weight: 500;
+    font-family: cursive;
+    animation: mover 4s infinite alternate
+}
+main .cont-main-ctn .cont-main-ctn1 .cont-info .email-cont i{
+    color: #ff0;
+}
+main .cont-main-ctn .cont-main-ctn1 .cont-info .phone-cont i{
+    color:#00f;
+}
+main .cont-main-ctn .cont-main-ctn1 .cont-info .insta-cont i{
+    color: #ff0062;
+}
+main .cont-main-ctn .cont-main-ctn1 .cont-info .fiverr-cont i{
+    color: #f00;
+}
+main .cont-main-ctn .cont-main-ctn1 .cont-info .inbox-img{
+    width: 300px;
+    height: inherit;
+    background: url('/assets/images/inbox-1.webp');
+    background-position: center center;
+    background-size: contain;
+    box-shadow: 0 0 20px var(--text-blue-500);
+    animation: mover 5s infinite alternate;
+}
+main .cont-main-ctn .cont-main-ctn1 .cont-info .inbox-img img{
+    height: inherit;
+    width: 100%;
+    border-radius: 20px;
+}
+@keyframes mover {
+    0% {
+        transform: translatey(60px);
+    }
+    100% {
+        transform: translatey(-20px);
+    }
+}

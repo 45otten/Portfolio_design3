@@ -14,14 +14,28 @@
     font-weight: 400;
 }
 
+body.dark{
+    color: var(--text-white-500);
+    background-color: var(--bg-black);
+}
+body.dark main .main-ctn .main-ctn-1 .auto-type .about-me-string strong{
+    color: var(--text-white-500);
+}
+body.dark main .nav-bar nav ul .toggle-mode i{
+    border: 2px solid var(--text-white-500);
+}
+body.dark main .nav-bar nav h1 span{
+    color: var(--text-white-500);
+}
+body{
+    background: var(--bg-white);
+}
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    height: auto;
-    border: 3px solid red;
-    background: var(--bg-white);
+    height: 100vh;
 }
 main .wave{
     position: absolute;
@@ -30,15 +44,16 @@ main .wave{
 }
 main .main-ctn{
     width: 85%;
-    padding: 250px 0;
+    height: 90vh;
+    padding: 150px 0;
     display: flex;
+    justify-content: space-between;
     z-index: 1;
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
 }
 main .main-ctn .main-ctn-1{
     width: 50%;
     height: 350px;
-    border: 1px solid green;
 }
 main .main-ctn .main-ctn-1 h1{
     font-weight: 900;
@@ -49,6 +64,23 @@ main .main-ctn .main-ctn-1 h1 span{
     font-family: "Clicker Script",cursive;
     color: var(--text-blue-500);
     font-weight: 600;
+}
+main .main-ctn .main-ctn-1 .auto-type{
+    height: 60px;
+    margin-bottom: 50px;
+}
+main .main-ctn .main-ctn-1 .auto-type .about-me-string strong{
+    font-weight: 700;
+    color: var(--text-black-500);
+}
+main .main-ctn .main-ctn-1 .auto-type .about-me-string .fa-html5{
+    color:skyblue;
+}
+main .main-ctn .main-ctn-1 .auto-type .about-me-string .fa-css3-alt{
+    color: red;
+}
+main .main-ctn .main-ctn-1 .auto-type .about-me-string .fa-js{
+    color: yellow;
 }
 main .main-ctn button{
     background: var(--text-white-500);
@@ -64,7 +96,50 @@ main .main-ctn button:hover{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: transparent;
     color: var(--text-white-500);
     transition: 0.8s ease;
+}
+main .main-ctn .main-ctn-2{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+main .main-ctn .main-ctn-2 .blob-1{
+    height: 100%;
+    width: 70%;
+    background: #6172ee73;
+    display: flex;
+    justify-content: center;
+    animation: animate1 5s ease-in-out infinite;
+}
+@keyframes animate1 {
+    0%,100%{
+        border-radius: 70% 50% 40% 80% /70% 40% 80% 50%;
+    }
+    50%{
+        border-radius: 40% 70% 70% 50% /60% 70% 40% 70%;
+
+    }
+    
+}
+main .main-ctn .main-ctn-2 .blob-img{
+    border: 2px solid var(--text-blue-500);
+    width: 90%;
+    height: 100%;
+    animation: animate 5s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+    background-image: url('/assets/images/programmer-img.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@keyframes animate{
+    0%,100%{
+        border-radius: 60% 40% 40% 70% /60% 40% 70% 40%;
+    }
+    50%{
+        border-radius: 40% 50% 60% 30% /50% 60% 40% 60%;
+
+    }
 }
