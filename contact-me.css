@@ -55,7 +55,7 @@ main .cont-main-ctn .cont-main-ctn1 .cont-img{
     width: 460px;
     height: 150px;
     border-radius: 50%;
-    background: url('/assets/images/contact me heading img.png');
+    background: url('/images/contact me heading img.png');
     background-repeat: no-repeat;
     animation: animate 9s ease-in-out infinite;
     display: flex;
@@ -123,7 +123,7 @@ main .cont-main-ctn .cont-main-ctn1 .cont-info .fiverr-cont i{
 main .cont-main-ctn .cont-main-ctn1 .cont-info .inbox-img{
     width: 200px;
     height: 200px;
-    background: url('/assets/images/inbox-1.webp');
+    background: url('/images/inbox-1.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

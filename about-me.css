@@ -253,7 +253,7 @@ main .abt-main .infromation .prsnl-info .prsnl-info-1 div {
     }
 
     main .abt-main .infromation button:hover {
-        background-image: url('/assets/images/button-bg-1.png');
+        background-image: url('/images/button-bg-1.png');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;

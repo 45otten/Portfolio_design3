@@ -95,7 +95,7 @@ main .main-ctn button{
     letter-spacing: 1px;
 }
 main .main-ctn button:hover{
-    background-image:url('/assets/images/button-bg-1.png');
+    background-image:url('/images/button-bg-1.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -144,7 +144,7 @@ main .main-ctn .main-ctn-2 .blob-img{
     height: 100%;
     animation: animate 5s ease-in-out infinite;
     transition: all 1s ease-in-out;
-    background-image: url('/assets/images/programmer-img.jpg');
+    background-image: url('/images/programmer-img.jpg');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
