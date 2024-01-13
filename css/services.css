@@ -114,6 +114,14 @@ main .service h1::after{
 .service-items .service-items-list .service-cat h3,hr,p{
     margin-top: 10px;
 }
+.service-items .service-items-list .service-cat:hover{
+    transform: scale(102%);
+    transition: 0.5s ease-in-out all;
+}
+.service-items .service-items-list .service-cat:hover p{
+    font-weight: 600;
+    transition: ease-in-out;
+}
 .service-items .service-items-list .service-cat hr{
     border: 1px solid var(--text-blue-500);
 }
