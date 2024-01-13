@@ -19,6 +19,7 @@ main {
     height: 900px;
     position: relative;
     overflow: hidden;
+    padding: 5px;
 }
 @media (max-width:840px){
     main{
