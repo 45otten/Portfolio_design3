@@ -1,34 +1,38 @@
-:root{
-    --text-blue-600:#0629F0;
-    --text-black:#000000;
-    --shadow-black:#00000033;
-    --bg-gray-2:#8b8b8b3f;
-    --text-white-500:#fff;
-    --bg-black:#000;
+:root {
+    --text-blue-600: #0629F0;
+    --text-black: #000000;
+    --shadow-black: #00000033;
+    --bg-gray-2: #8b8b8b3f;
+    --text-white-500: #fff;
+    --bg-black: #000;
     --shadow-blue-500: #0629f067;
 }
-main .nav-bar{
-   width: 85%;
-   display: flex;
-   justify-content: center;
-   height: 60px;
-   position: fixed;
-   padding: 10px 0;
-   z-index: 99 !important;
+
+main .nav-bar {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    position: fixed;
+    padding: 10px 0;
+    z-index: 99 !important;
 }
-@media (max-width:360px){
-    main .nav-bar{
+
+@media (max-width:360px) {
+    main .nav-bar {
         width: 100%;
         box-shadow: none;
         margin: -10px 0;
     }
 }
-main .nav-bar .active{
+
+main .nav-bar .active {
     color: var(--text-blue-600);
     border-bottom: 2px solid var(--text-blue-600);
     padding-bottom: 1px;
 }
-main .nav-bar nav{
+
+main .nav-bar nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,26 +42,31 @@ main .nav-bar nav{
     background-color: var(--text-white-500);
     z-index: 99 !important;
 }
-main .nav-bar nav h1{
-    color:var(--text-blue-600);
+
+main .nav-bar nav h1 {
+    color: var(--text-blue-600);
     font-weight: 500;
     position: relative;
     font-size: 25px;
 }
-main .nav-bar nav h1 span{
+
+main .nav-bar nav h1 span {
     color: var(--text-black);
-    font-family:"Rubik Distressed";
+    font-family: "Rubik Distressed";
     font-size: 30px;
 }
-@media (max-width:470px){
-    main .nav-bar nav h1{
+
+@media (max-width:470px) {
+    main .nav-bar nav h1 {
         display: none;
     }
-    main .nav-bar nav{
+
+    main .nav-bar nav {
         justify-content: center;
     }
 }
-main .nav-bar nav h1::after{
+
+main .nav-bar nav h1::after {
     content: "";
     position: absolute;
     width: 65px;
@@ -65,23 +74,26 @@ main .nav-bar nav h1::after{
     right: 1px;
     border-bottom: 2px solid var(--text-blue-600);
 }
-main .nav-bar nav ul a:visited{
-    text-decoration: none;
+
+main .nav-bar nav ul a:visited {
+    text-decoration: none !important;
     color: var(--bg-black);
 }
-main .nav-bar nav ul a:active{
+
+main .nav-bar nav ul a:active {
     color: var(--text-blue-600);
     filter: drop-shadow(0 0 5px var(--shadow-blue-500));
 }
-main .nav-bar nav ul li{
+
+main .nav-bar nav ul li {
     display: inline-block;
     margin-right: 15px;
-    padding: 8px 0; 
+    padding: 8px 0;
     font-weight: 500;
     border-bottom: 2px solid white;
 }
 
-main .nav-bar nav ul li:hover{
+main .nav-bar nav ul li:hover {
     border-bottom: 2px solid var(--text-blue-600);
     cursor: pointer;
     padding: 1px 0;

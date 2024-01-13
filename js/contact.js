@@ -6,7 +6,7 @@ function typeautomail() {
     loop: false,
     onComplete: () => {
       automail.cursor.style.display = "none";
-    }
+    },
   });
 }
 typeautomail();
@@ -18,7 +18,7 @@ function typeautophone() {
     typeSpeed: 50,
     onComplete: () => {
       autophone.cursor.style.display = "none";
-    }
+    },
   });
 }
 setTimeout(typeautophone, 1700);
@@ -30,7 +30,7 @@ function typeautoinsta() {
     typeSpeed: 50,
     onComplete: () => {
       autoinsta.cursor.style.display = "none";
-    }
+    },
   });
 }
 setTimeout(typeautoinsta, 2800);
@@ -42,7 +42,7 @@ function typeautofiverr() {
     typeSpeed: 50,
     onComplete: () => {
       autofiverr.cursor.style.display = "none";
-    }
+    },
   });
 }
 setTimeout(typeautofiverr, 4000);
