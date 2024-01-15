@@ -9,14 +9,12 @@ function autotyping() {
 }
 autotyping();
 
-let banner = document.querySelector(".nav-bar");
-let navbar = document.querySelector(".nav-bar nav");
 
-function downloadfile() {
+function downloadfile(){
   var filepath = "./CV.txt";
   var linkFile = document.createElement("a");
   linkFile.href = filepath;
-  linkFile.download = "Web Designer Ahad_CV";
+  linkFile.download = "Web Designer Ahad CV";
   document.body.appendChild(link);
   linkFile.click();
   document.body.removeChild(link);
