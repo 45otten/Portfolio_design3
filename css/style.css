@@ -1,37 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@300;400;500&&family=Rubik+Distressed&display=swap');
 
-:root{
-    --text-blue-500:#0629f0;
-    --text-white-500:#ffffff;
-    --text-black-500:#000;
-    --bg-black:#000000;
-    --bg-white:#fff;
+:root {
+    --text-blue-500: #0629f0;
+    --text-white-500: #ffffff;
+    --text-black-500: #000;
+    --bg-black: #000000;
+    --bg-white: #fff;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
-    font-family: "Poppins",sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
 }
 
-main{
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    height: 800px;
+    height: 900px;
 }
-@media (max-width:800px){
-    main{
+
+@media (max-width:800px) {
+    main {
         height: 900px;
     }
 }
-main .wave{
+
+main .wave {
     position: absolute;
     width: 100%;
     bottom: 0;
 }
-main .main-ctn{
+
+main .main-ctn {
     width: 85%;
     height: auto;
     padding: 110px 0 0;
@@ -41,51 +45,64 @@ main .main-ctn{
     margin: 15px;
     /* border: 2px solid orange; */
 }
-@media(max-width: 800px){
-    main .main-ctn{
+
+@media(max-width: 800px) {
+    main .main-ctn {
         width: 90%;
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
     }
 }
-main .main-ctn .main-ctn-1{
+
+main .main-ctn .main-ctn-1 {
     width: 50%;
     height: 350px;
 }
-@media(max-width: 800px){
-    main .main-ctn .main-ctn-1{
+
+@media(max-width: 800px) {
+    main .main-ctn .main-ctn-1 {
         width: 100%;
     }
 }
-main .main-ctn .main-ctn-1 h1{
+
+main .main-ctn .main-ctn-1 h1 {
     font-weight: 900;
     font-size: 50px;
     margin-bottom: 50px;
 }
-main .main-ctn .main-ctn-1 h1 span{
-    font-family: "Clicker Script",cursive;
+main .main-ctn .main-ctn-1 #hire-btn{
+    margin-top: 10px;
+}
+main .main-ctn .main-ctn-1 h1 span {
+    font-family: "Clicker Script", cursive;
     color: var(--text-blue-500);
     font-weight: 600;
 }
-main .main-ctn .main-ctn-1 .auto-type{
+
+main .main-ctn .main-ctn-1 .auto-type {
     height: 60px;
     margin-bottom: 50px;
 }
-main .main-ctn .main-ctn-1 .auto-type .about-me-string strong{
+
+main .main-ctn .main-ctn-1 .auto-type .about-me-string strong {
     font-weight: 700;
     color: var(--text-black-500);
 }
-main .main-ctn .main-ctn-1 .auto-type .about-me-string .fa-html5{
-    color:skyblue;
+
+main .main-ctn .main-ctn-1 .auto-type .about-me-string .fa-html5 {
+    color: skyblue;
 }
-main .main-ctn .main-ctn-1 .auto-type .about-me-string .fa-css3-alt{
+
+main .main-ctn .main-ctn-1 .auto-type .about-me-string .fa-css3-alt {
     color: red;
 }
-main .main-ctn .main-ctn-1 .auto-type .about-me-string .fa-js{
+
+main .main-ctn .main-ctn-1 .auto-type .about-me-string .fa-js {
     color: yellow;
 }
-main .main-ctn button{
+
+main .main-ctn button {
     background: var(--text-white-500);
     border: 3px solid var(--text-blue-500);
     color: var(--text-blue-500);
@@ -94,27 +111,31 @@ main .main-ctn button{
     font-weight: 600;
     letter-spacing: 1px;
 }
-main .main-ctn button:hover{
-    background-image:url('/images/button-bg-1.png');
+
+main .main-ctn button:hover {
+    background-image: url('../images/button-bg-1.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: var(--text-white-500);
     transition: 0.8s ease;
 }
-main .main-ctn .main-ctn-2{
+
+main .main-ctn .main-ctn-2 {
     width: 50%;
     display: flex;
     justify-content: end;
     align-items: center;
 }
-@media(max-width: 800px){
-    main .main-ctn .main-ctn-2{
+
+@media(max-width: 800px) {
+    main .main-ctn .main-ctn-2 {
         width: 100%;
         height: 300px;
     }
 }
-main .main-ctn .main-ctn-2 .blob-1{
+
+main .main-ctn .main-ctn-2 .blob-1 {
     height: 100%;
     width: 70%;
     background: #6172ee73;
@@ -122,38 +143,48 @@ main .main-ctn .main-ctn-2 .blob-1{
     justify-content: center;
     animation: animate1 5s ease-in-out infinite;
 }
-@media(max-width: 800px){
-    main .main-ctn .main-ctn-2 .blob-1{
+
+@media(max-width: 800px) {
+    main .main-ctn .main-ctn-2 .blob-1 {
         width: 100%;
         margin-top: 45px;
     }
 }
+
 @keyframes animate1 {
-    0%,100%{
+
+    0%,
+    100% {
         border-radius: 70% 50% 40% 80% /70% 40% 80% 50%;
     }
-    50%{
+
+    50% {
         border-radius: 40% 70% 70% 50% /60% 70% 40% 70%;
 
     }
-    
+
 }
-main .main-ctn .main-ctn-2 .blob-img{
+
+main .main-ctn .main-ctn-2 .blob-img {
     border: 2px solid var(--text-blue-500);
     width: 90%;
     height: 100%;
     animation: animate 5s ease-in-out infinite;
     transition: all 1s ease-in-out;
-    background-image: url('/images/programmer-img.jpg');
+    background-image: url('../images/programmer-img.jpg');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-@keyframes animate{
-    0%,100%{
+
+@keyframes animate {
+
+    0%,
+    100% {
         border-radius: 60% 40% 40% 70% /60% 40% 70% 40%;
     }
-    50%{
+
+    50% {
         border-radius: 40% 50% 60% 30% /50% 60% 40% 60%;
 
     }

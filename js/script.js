@@ -12,12 +12,12 @@ autotyping();
 let banner = document.querySelector(".nav-bar");
 let navbar = document.querySelector(".nav-bar nav");
 
-function downloadFile() {
-  var fileUrl = "/CV.txt";
-  var link = document.createElement("a");
-  link.href = fileUrl;
-  link.download = "Web Designer Ahad_CV";
+function downloadfile() {
+  var filepath = "./CV.txt";
+  var linkFile = document.createElement("a");
+  linkFile.href = filepath;
+  linkFile.download = "Web Designer Ahad_CV";
   document.body.appendChild(link);
-  link.click();
+  linkFile.click();
   document.body.removeChild(link);
 }

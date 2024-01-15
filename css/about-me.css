@@ -232,75 +232,75 @@ main .abt-main .infromation .prsnl-info .prsnl-info-1 div {
     }
 }
 
-    main .abt-main .infromation .prsnl-info .prsnl-info-1 div h4 span {
-        font-weight: 400;
-        color: var(--text-black-500);
-    }
+main .abt-main .infromation .prsnl-info .prsnl-info-1 div h4 span {
+    font-weight: 400;
+    color: var(--text-black-500);
+}
 
-    main .abt-main .infromation .prsnl-info .prsnl-info-1 div h4 {
-        border-bottom: 1px solid var(--text-dullblack-500);
-    }
+main .abt-main .infromation .prsnl-info .prsnl-info-1 div h4 {
+    border-bottom: 1px solid var(--text-dullblack-500);
+}
 
-    main .abt-main .infromation button {
-        background: var(--text-white-500);
-        border: 3px solid var(--text-blue-500);
-        color: var(--text-blue-500);
-        padding: 10px 25px;
-        border-radius: 20px;
-        width: 190px;
-        font-weight: 600;
-        letter-spacing: 1px;
-    }
+main .abt-main .infromation button {
+    background: var(--text-white-500);
+    border: 3px solid var(--text-blue-500);
+    color: var(--text-blue-500);
+    padding: 10px 25px;
+    border-radius: 20px;
+    width: 190px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
 
-    main .abt-main .infromation button:hover {
-        background-image: url('/images/button-bg-1.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        color: var(--text-white-500);
-        transition: 0.8s ease;
-    }
+main .abt-main .infromation button:hover {
+    background-image: url('../images/button-bg-1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--text-white-500);
+    transition: 0.8s ease;
+}
 
+main .abt-main .infromation .skills {
+    width: 40%;
+    height: 500px;
+    background-color: transparent;
+}
+
+@media (max-width:930px) {
     main .abt-main .infromation .skills {
-        width: 40%;
-        height: 500px;
-        background-color: transparent;
-    }
-
-    @media (max-width:930px) {
-        main .abt-main .infromation .skills {
-            width: 100%;
-        }
-    }
-
-    .infromation .skills .my-skills {
-        display: flex;
-        flex: 0 0 60%;
-        gap: 5px;
-        max-width: 100%;
-        margin-top: 30px;
-        display: flex;
-        flex-direction: column;
-        height: 320px;
-    }
-
-    .infromation .skills .my-skills .skill-item {
-        margin: 10px 0;
-    }
-
-    .infromation .skills .my-skills .skill-item .progress {
         width: 100%;
-        position: relative;
-        height: 5px;
-        background-color: var(--text-dullblack-500);
-        border-radius: 20px;
     }
+}
 
-    .infromation .skills .my-skills .skill-item .progress .progress-in {
-        position: absolute;
-        left: 0;
-        height: 5px;
-        background-color: var(--text-blue-500);
-        border-radius: 10px;
-        box-shadow: 0 0 10px var(--text-blue-500);
-    }
+.infromation .skills .my-skills {
+    display: flex;
+    flex: 0 0 60%;
+    gap: 5px;
+    max-width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 320px;
+}
+
+.infromation .skills .my-skills .skill-item {
+    margin: 10px 0;
+}
+
+.infromation .skills .my-skills .skill-item .progress {
+    width: 100%;
+    position: relative;
+    height: 5px;
+    background-color: var(--text-dullblack-500);
+    border-radius: 20px;
+}
+
+.infromation .skills .my-skills .skill-item .progress .progress-in {
+    position: absolute;
+    left: 0;
+    height: 5px;
+    background-color: var(--text-blue-500);
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--text-blue-500);
+}
