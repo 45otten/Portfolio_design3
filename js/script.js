@@ -15,7 +15,7 @@ function downloadfile(){
   var linkFile = document.createElement("a");
   linkFile.href = filepath;
   linkFile.download = "Web Designer Ahad CV";
-  document.body.appendChild(link);
+  document.body.appendChild(linkFile);
   linkFile.click();
-  document.body.removeChild(link);
+  document.body.removeChild(linkFile);
 }
